@@ -73,3 +73,19 @@ let yearsPerProfession = teamMembers.reduce( (acc, curr) => {
 },{});
 
 console.log(yearsPerProfession);
+
+
+let namesPerProfession = teamMembers.reduce( (acc, curr) => {
+  let key = curr.profession;
+  if (!acc[key]) {
+    acc[key] = [];
+  } 
+  acc[key].push(curr.name);
+  return acc;
+},{});
+
+console.log(namesPerProfession);
+
+
+let developers = teamMembers.filter( item => item.profession === 'Developer');
+console.log(developers);
