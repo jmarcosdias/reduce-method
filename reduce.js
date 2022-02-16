@@ -20,8 +20,10 @@ let sum2 = nums.reduce( (acc, curr) => {
   );
   return acc + curr;
 }, 100);
-
 console.log(sum2);
+
+let sum3 = nums.reduce( (acc, curr) => acc + curr, 100);
+console.log(sum3);
 
 const teamMembers = [
   {
